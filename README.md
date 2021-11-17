@@ -31,7 +31,7 @@ crontab -e
 ```
 7. Tambahkan script berikut dibaris terakhir/paling bawah :  
 ```
-*/5 * * * * bash /root/monitoring.sh > /root/monitoring.log 2>&1
+@hourly bash /root/monitoring.sh > /root/monitoring.log 2>&1
 ```
 */5 di script diatas artinya perintah monitoring akan dijalankan per 5 menit. Silahkan bisa disesuaikan dengan kebutuhan.  
 Untuk mengetahui penulisan dan arti dari crontab, bisa mengunjungi link dibawah :  
